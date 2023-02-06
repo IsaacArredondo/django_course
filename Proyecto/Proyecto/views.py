@@ -3,6 +3,7 @@ import datetime
 from django.template import Template, Context
 #from django.template import loader
 from django.template.loader import get_template
+from django.shortcuts import render
 
 ## Resquest: Para realizar peticiones
 ## HttpsResponse: Para enviar la respuesta usando el protocolo HTTP.
@@ -81,3 +82,10 @@ def plantillaCargador(request):
     # Rederizar el documento
     documento = plantillaExterna.render({"nombre" : nombre, "fecha" : fecha, "lenguajes" : lenguajes})
     return HttpResponse(documento)
+
+def plantillaShortcut(request):
+    nombre = "IsaacArredondo"
+    fecha = datetime.datetime.now()
+    lenguajes = ["Python", "Ruby", "JavScript", "C++", "PHP", "Java", "C#", "Kotlin"]
+
+    return render(request, 'plantillaParametros.html', {"nombre" : nombre, "fecha" : fecha, "lenguajes" : lenguajes})

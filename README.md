@@ -48,6 +48,8 @@ Dentro de los parametros tambien agregue un parametro tipo lista para desplegarl
 
 Además de practicar con algunos atributos y filtros en la platilla.
 
-### Loaders
+### Loaders y Render
 
 Ahora creo una nueva vista que carga una plantilla mediante el metodo loader y get_template, para ello debo definir la ruta donde django buscara las platillas en el archivo settings.py, en la parte DIRS de TEMPLATES.
+
+Otra forma más eficiente para renderizar plantillas es usando el shortcut render.
