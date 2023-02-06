@@ -46,3 +46,4 @@ Aqui creo una plantilla nueva de html para lograr enviar parametros que muestren
 
 Dentro de los parametros tambien agregue un parametro tipo lista para desplegarla en la plantilla.
 
+Además de practicar con algunos atributos y filtros en la platilla.
