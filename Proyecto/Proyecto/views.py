@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 import datetime
+from django.template import Template, Context
 
 ## Resquest: Para realizar peticiones
 ## HttpsResponse: Para enviar la respuesta usando el protocolo HTTP.
@@ -29,3 +30,26 @@ def obtenerMomentoActual(request):
     #respuesta = "<h1>Momento actual: {0}</h1>".format(datetime.datetime.now())
     respuesta = "<h1>Momento actual: {0}</h1>".format(datetime.datetime.now().strftime("%A %d/%m/%Y %H:%M:%S"))
     return HttpResponse(respuesta)
+
+def contenidoHTML(request, name, edad):
+    contenido = """
+    <html>
+    <body>
+    <p>Nombre: %s / Edad: %s</p>
+    </body>
+    </html>
+    """ % (name, edad)
+    return HttpResponse(contenido)
+
+def miPrimeraPlantilla(request):
+    # Abrimos el documento que contiene a la plantilla:
+    plantillaExterna = open("C:/Users/isaac/workspace/d_jango/django_curso_uskokrum/Proyecto/Proyecto/plantillas/miPrimeraPlantilla.html")
+    # Cargar el documento en una variable de tipo 'Template'
+    template = Template(plantillaExterna.read())
+    # Cerrar el documento externo que hemos abierto:
+    plantillaExterna.close()
+    # Crear un Contexto
+    contexto = Context()
+    # Renderizar el documento en base al contexto
+    documento = template.render(contexto)
+    return HttpResponse(documento)
