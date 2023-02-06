@@ -9,5 +9,14 @@
 <body>
     <h1>Nombre del programador: {{nombre}}</h1>
     <h1>Fecha Actual: Dia: {{fecha.day}} - Mes: {{fecha.month}}</h1>
+    <ul>
+        {% for leng in lenguajes %}
+            {% if leng == 'Python' %}
+                <li style="color: blueviolet">{{leng}}</li>
+            {% else %}
+                <li>{{leng}}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
 </body>
 </html>

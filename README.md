@@ -44,3 +44,5 @@ Tambien creamos una vista que nos permita abrir, read y renderizar una platilla 
 
 Aqui creo una plantilla nueva de html para lograr enviar parametros que muestren mi nomre y fecha actual.
 
+Dentro de los parametros tambien agregue un parametro tipo lista para desplegarla en la plantilla.
+
