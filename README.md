@@ -33,3 +33,14 @@ Ahora en la carpeta Proyecto creo una archivo nuevo llamado "views.py" para mane
 Creamos la vista categoria edad en el archivo "views.py" y agremos su direción en "urls.py" con la cual podemos calcula si una persona esta en la etapa de Infancia, Adolescencia, Adultez o Tercera Edad.
 
 Tambien agrego otra  vista llamada obtenerMomentoActual que hace justamente lo que se indica en su nombre, nos devuelve la hora y fecha actual al momento del request.
+
+### Crear una vista con dos parametros y plantilla HTML.
+
+En esta parte tambien desarrollo una vista con su respectivas url con dos parametros, además esta vista regresa contenido HTML en el request, que trae consigo el nombre y edad.
+
+Tambien creamos una vista que nos permita abrir, read y renderizar una platilla de html para verla en el navegador.
+
+### Creamos nueva plantilla con parametros.
+
+Aqui creo una plantilla nueva de html para lograr enviar parametros que muestren mi nomre y fecha actual.
+

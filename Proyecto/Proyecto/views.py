@@ -53,3 +53,18 @@ def miPrimeraPlantilla(request):
     # Renderizar el documento en base al contexto
     documento = template.render(contexto)
     return HttpResponse(documento)
+
+def plantillaParametros(request):
+    nombre = "IsaacArredondo"
+    fecha = datetime.datetime.now()
+    # Abrimos el documento que contiene a la plantilla
+    plantillaExterna = open("C:/Users/isaac/workspace/d_jango/django_curso_uskokrum/Proyecto/Proyecto/plantillas/plantillaParametros.html")
+    # Cargar el documento en una variable de tipo 'Template'
+    template = Template(plantillaExterna.read())
+    # Cerrar el documento externo que hemos abierto:
+    plantillaExterna.close()
+    # Crear un contexto:
+    contexto = Context({"nombre" : nombre, "fecha" : fecha})
+    # Renderizar el documento
+    documento = template.render(contexto)
+    return HttpResponse(documento)

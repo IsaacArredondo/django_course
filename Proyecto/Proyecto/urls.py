@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from Proyecto.views import bienvenida, bienvenidaRojo # Importamos las vistas
 from Proyecto.views import categoriaEdad, obtenerMomentoActual, contenidoHTML
-from Proyecto.views import miPrimeraPlantilla
+from Proyecto.views import miPrimeraPlantilla, plantillaParametros
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +26,6 @@ urlpatterns = [
     path('categoriaEdad/<int:edad>', categoriaEdad),
     path('obtenerMomentoActual/', obtenerMomentoActual), 
     path('contenidoHTML/<name>/<int:edad>', contenidoHTML),
-    path('miPrimeraPlantilla/', miPrimeraPlantilla)
+    path('miPrimeraPlantilla/', miPrimeraPlantilla),
+    path('plantillaParametros/', plantillaParametros)
 ]
