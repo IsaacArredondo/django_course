@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Proyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/isaac/workspace/d_jango/django_curso_uskokrum/Proyecto/Proyecto/plantillas/"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

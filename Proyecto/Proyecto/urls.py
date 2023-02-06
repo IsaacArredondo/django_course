@@ -17,15 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from Proyecto.views import bienvenida, bienvenidaRojo # Importamos las vistas
 from Proyecto.views import categoriaEdad, obtenerMomentoActual, contenidoHTML
-from Proyecto.views import miPrimeraPlantilla, plantillaParametros
+from Proyecto.views import miPrimeraPlantilla, plantillaParametros, plantillaCargador
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bienvenida', bienvenida),
-    path('bienvenidaRojo', bienvenidaRojo),
+    path('bienvenida/', bienvenida),
+    path('bienvenidaRojo/', bienvenidaRojo),
     path('categoriaEdad/<int:edad>', categoriaEdad),
     path('obtenerMomentoActual/', obtenerMomentoActual), 
     path('contenidoHTML/<name>/<int:edad>', contenidoHTML),
     path('miPrimeraPlantilla/', miPrimeraPlantilla),
-    path('plantillaParametros/', plantillaParametros)
+    path('plantillaParametros/', plantillaParametros),
+    path('plantillaCargador/', plantillaCargador)
 ]

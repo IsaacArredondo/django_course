@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 import datetime
 from django.template import Template, Context
+#from django.template import loader
+from django.template.loader import get_template
 
 ## Resquest: Para realizar peticiones
 ## HttpsResponse: Para enviar la respuesta usando el protocolo HTTP.
@@ -68,4 +70,14 @@ def plantillaParametros(request):
     contexto = Context({"nombre" : nombre, "fecha" : fecha, "lenguajes" : lenguajes})
     # Renderizar el documento
     documento = template.render(contexto)
+    return HttpResponse(documento)
+
+def plantillaCargador(request):
+    nombre = "IsaacArredondo"
+    fecha = datetime.datetime.now()
+    lenguajes = ["Python", "Ruby", "JavScript", "PHP", "Java", "C#", "Kotlin"]
+    # Especificando la carpeta donde se encuentran las plantillas y creamos una variable que las almacena
+    plantillaExterna = get_template('plantillaParametros.html')
+    # Rederizar el documento
+    documento = plantillaExterna.render({"nombre" : nombre, "fecha" : fecha, "lenguajes" : lenguajes})
     return HttpResponse(documento)

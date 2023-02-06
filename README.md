@@ -47,3 +47,7 @@ Aqui creo una plantilla nueva de html para lograr enviar parametros que muestren
 Dentro de los parametros tambien agregue un parametro tipo lista para desplegarla en la plantilla.
 
 Además de practicar con algunos atributos y filtros en la platilla.
+
+### Loaders
+
+Ahora creo una nueva vista que carga una plantilla mediante el metodo loader y get_template, para ello debo definir la ruta donde django buscara las platillas en el archivo settings.py, en la parte DIRS de TEMPLATES.
