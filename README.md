@@ -23,5 +23,7 @@ python
 Ahora creamos el proyeco de Django como "Proyecto":
 
 ```
-django-admin startproject Poryecto
+django-admin startproject Proyecto
 ```
+
+Ahora en la carpeta Proyecto creo una archivo nuevo llamado "views.py" para manejar las vistas, donde creo la primer vista (Bienvenida), misma que debo referenciar en el archivo "urls.py".
