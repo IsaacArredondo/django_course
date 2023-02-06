@@ -19,3 +19,9 @@ python
 >>> django.VERSION
 >>> exit()
 ```
+
+Ahora creamos el proyeco de Django como "Proyecto":
+
+```
+django-admin startproject Poryecto
+```
