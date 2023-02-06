@@ -14,6 +14,7 @@
 <body>
     <h1>Nombre del programador: {{nombre}}</h1>
     <h2>Fecha Actual: {{fecha.day}} / {{fecha.month}} / {{fecha.year}}</h2>
+    {# Este es un comentario de utilidad #}
     <h3>No. de Lenguajes: {{lenguajes|length}}</h3>
     <ul>
         {% for leng in lenguajes %}
@@ -24,5 +25,10 @@
             {% endif %}
         {% endfor %}
     </ul>
+    {% comment %}
+    Este es un
+    comentario
+    de más de 1 línea.
+    {% endcomment %}
 </body>
 </html>
