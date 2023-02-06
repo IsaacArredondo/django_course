@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Proyecto.views import bienvenida, bienvenidaRojo # Importamos las vistas
-from Proyecto.views import categoriaEdad
+from Proyecto.views import categoriaEdad, obtenerMomentoActual
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('bienvenida', bienvenida),
     path('bienvenidaRojo', bienvenidaRojo),
-    path('categoriaEdad/<int:edad>', categoriaEdad)
+    path('categoriaEdad/<int:edad>', categoriaEdad),
+    path('obtenerMomentoActual/', obtenerMomentoActual)
 ]
