@@ -68,5 +68,5 @@ Para poder usar archivos como JS, CSS e imagenes debemos configurar la carpeta d
 
 ```
 {% load static %}
-{% include "plantillaBarraNavegacion.html" %}
+<link rel="stylesheet" href="{% static 'css/plantillaBarraNavegacion.css' %}" type="text/css">
 ```
