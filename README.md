@@ -53,3 +53,7 @@ Además de practicar con algunos atributos y filtros en la platilla.
 Ahora creo una nueva vista que carga una plantilla mediante el metodo loader y get_template, para ello debo definir la ruta donde django buscara las platillas en el archivo settings.py, en la parte DIRS de TEMPLATES.
 
 Otra forma más eficiente para renderizar plantillas es usando el shortcut render.
+
+### Herencia de Plantillas
+
+Ahora vamos a crear un plantilla Padre que nos sirva para reutilizar codigo en otras plantillas.

@@ -30,6 +30,5 @@ urlpatterns = [
     path('miPrimeraPlantilla/', miPrimeraPlantilla),
     path('plantillaParametros/', plantillaParametros),
     path('plantillaCargador/', plantillaCargador),
-    path('plantillaShortcut/', plantillaShortcut
-    )
+    path('plantillaShortcut/', plantillaShortcut)
 ]
