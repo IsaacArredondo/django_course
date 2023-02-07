@@ -56,4 +56,4 @@ Otra forma más eficiente para renderizar plantillas es usando el shortcut rende
 
 ### Herencia de Plantillas
 
-Ahora vamos a crear un plantilla Padre que nos sirva para reutilizar codigo en otras plantillas.
+Ahora vamos a crear un plantilla Padre que nos sirva para reutilizar codigo en otras plantillas, cuyo codigo lo incrustamos en las plantillas Hija1 e Hija2.
