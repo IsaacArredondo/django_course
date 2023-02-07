@@ -12,8 +12,10 @@
 <body>
     {% include "plantillaBarraNavegacion.html" %}
     <h1 style="color:blue">IsaacArredondo</h1>
+    <img src="{% static 'imagenes/tiny_house.png' %}" alt="">
     {% block content %}
     {% endblock%}
     <p>Este es el pie de pagina.</p>
+    <script type="text/javascript" src='{% static "js/plantillaPadre.js" %}'></script>
 </body>
 </html>
