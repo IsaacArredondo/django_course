@@ -57,3 +57,7 @@ Otra forma más eficiente para renderizar plantillas es usando el shortcut rende
 ### Herencia de Plantillas
 
 Ahora vamos a crear un plantilla Padre que nos sirva para reutilizar codigo en otras plantillas, cuyo codigo lo incrustamos en las plantillas Hija1 e Hija2.
+
+### Crear Plantilla de Barra de Navegación
+
+Aquí creo una plantilla con una lista ordenada y un poco de estilo CSS para ver como se incluye con la palabra reservadad "include" en la plantilla Padre y a su vez hereada la misma barra a las plantillas hijas.
