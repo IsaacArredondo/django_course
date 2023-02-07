@@ -61,3 +61,12 @@ Ahora vamos a crear un plantilla Padre que nos sirva para reutilizar codigo en o
 ### Crear Plantilla de Barra de Navegación
 
 Aquí creo una plantilla con una lista ordenada y un poco de estilo CSS para ver como se incluye con la palabra reservadad "include" en la plantilla Padre y a su vez hereada la misma barra a las plantillas hijas.
+
+### Configurar Archivos Estaticos
+
+Para poder usar archivos como JS, CSS e imagenes debemos configurar la carpeta de estos, así ya no será necesario escribir este tipo de codigo dentro de las plantillas, sino lo podremos importar, para ello en el archivo "settings.py" agregamos una nueva variable como ruta, debajo de STATIC_URL, además para importarlo este cógigo en el archivo html, ahora lo hacemos dentro de la plantilla Padre con los siguientes comandos:
+
+```
+{% load static %}
+{% include "plantillaBarraNavegacion.html" %}
+```

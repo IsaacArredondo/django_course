@@ -1,0 +1,12 @@
+#MiBarra{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+#MiBarra li{
+    display: inline;
+    margin: 0 30px;
+    color: brown;
+}
